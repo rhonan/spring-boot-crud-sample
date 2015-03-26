@@ -10,10 +10,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan(basePackages = { "br.com.rhonan.fiesc.controller",
-"br.com.rhonan.fiesc.service.impl" })
-@EnableJpaRepositories(basePackages = { "br.com.rhonan.fiesc.repository" })
-@EntityScan("br.com.rhonan.fiesc.model")
+@ComponentScan(basePackages = { "br.com.rhonan.sample.controller",
+"br.com.rhonan.sample.service.impl" })
+@EnableJpaRepositories(basePackages = { "br.com.rhonan.sample.repository" })
+@EntityScan("br.com.rhonan.sample.model")
 public class StartUp {
 	public static void main(final String[] args) {
 		SpringApplication.run(StartUp.class, args);
